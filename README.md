@@ -17,4 +17,17 @@ Ensure you have the following installed on your local machine:
 ### Installation
 
 1. Clone the repository
+
 ```git clone https://git.fhict.nl/I450970/stackassist-example.git```
+
+2. Navigate to the project directory 
+
+```cd stackassist-example```
+
+3. Install the dependencies
+
+```npm install```
+
+
+## Running the application
+ 

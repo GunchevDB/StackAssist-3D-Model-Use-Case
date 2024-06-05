@@ -160,7 +160,7 @@ body * {
   width: 30%;
   background-color: #cecece;
   border-radius: 20px;
-  height: 10px;
+  height: 1rem;
 }
 
 .progress-bar {
@@ -195,13 +195,34 @@ body * {
 }
 
 @media (max-width: 768px) {
+  .navigation{
+    bottom: 0;
+  }
   .navigation__button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    bottom: 0;
   }
   .icon-360 {
     width: 50px;
     height: 50px;
+  }
+
+  .card{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+  }
+
+  .canvas{
+    left: 0;
+    top: -10%;
+    height: 80%;
+  }
+
+  .progress-container{
+    width: 50%;
+    top: 15%;
   }
 }
 

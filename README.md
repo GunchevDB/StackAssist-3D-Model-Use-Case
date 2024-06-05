@@ -35,7 +35,7 @@ To run the application in development mode
 
 ```npm run dev```
 
-This command will start a local development server, typically accessible at `[https://localhost:5173/](https://localhost:5173/)`.
+This command will start a local development server, typically accessible at `https://localhost:5173/`.
 
 ## Testing as a Progressive Web App(PWA)
 

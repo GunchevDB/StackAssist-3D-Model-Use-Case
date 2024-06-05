@@ -1,15 +1,20 @@
 # StackAssist ThreeJS
 
-
+StackAssist is a web application that leverages Three.js for 3D rendering and animations, providing an interactive platform for visualizing and manipulating stacked boxes.
 
 ## Getting started
 
-You can just pull and open the project in your VS Code. In order to test you can run **npm run dev**.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-If you want to test as a PWA:
-- Run **npm run build** in Terminal
-- Run **npm run serve** in Terminal
-- App should host on available host, most likely - http://localhost:5173/
+### Prerequisites
 
-Additionally, you can access netlify version here - https://boxes-stack-threejs.netlify.app/
+Ensure you have the following installed on your local machine:
 
+- [Node.js](https://nodejs.org/en) (v14 or higher)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [git](https://www.git-scm.com/downloads)
+
+### Installation
+
+1. Clone the repository
+```git clone https://git.fhict.nl/I450970/stackassist-example.git```

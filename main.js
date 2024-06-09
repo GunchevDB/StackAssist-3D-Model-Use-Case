@@ -94,7 +94,7 @@ if ('serviceWorker' in navigator) {
 
 const pausebtn = document.querySelector(".pause-button");
 pausebtn.addEventListener("click", () => {
-    window.location.href = `index.html`;
+    window.location.href = `pause.html`;
   
 });
 

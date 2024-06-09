@@ -31,3 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const continueBtn = document.querySelector(".continuebtn");
+continueBtn.addEventListener("click", () => {
+    window.location.href = `stack_screen.html`;
+});
+
+
+const exitroundbtn = document.querySelector(".exitroundbtn");
+exitroundbtn.addEventListener("click", () => {
+    window.location.href = `index.html`;
+});
+
+const logoutbtn = document.querySelector(".logoutbtn");
+logoutbtn.addEventListener("click", () => {
+window.alert("Cannot log out; go back to work!")  
+});

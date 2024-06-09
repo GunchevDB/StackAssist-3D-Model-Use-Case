@@ -4,8 +4,7 @@ import gsap from "gsap";
 
 import Loader, { RESOURCE_TYPE } from "./components/Loader";
 import WebGL from "./components/WebGL";
-import Controller from "./components/Controller";
-import Marquee from "./components/Marquee";
+import Controller from "./components/Controller"; 
 
 class Application {
   constructor(attributes = {}) {
@@ -91,3 +90,4 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+

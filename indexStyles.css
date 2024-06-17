@@ -1,0 +1,35 @@
+body{
+    background: #F5f5f5;
+}
+
+
+
+.Title_Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #CECECE;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.Start_Stacking {
+    width: 43vw;
+    height: 20vh;
+    background-color: #4EB772;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    margin-top: -15%; 
+    text-decoration: none;
+}

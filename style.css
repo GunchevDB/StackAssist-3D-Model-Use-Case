@@ -376,14 +376,3 @@ body * {
 }
 
 
-.Title_Text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: #CECECE;
-  font-size: 100px;
-  font-weight: bold;
-}

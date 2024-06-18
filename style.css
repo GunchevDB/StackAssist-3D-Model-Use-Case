@@ -212,7 +212,7 @@ body * {
 }
 
 .back-button {
-  background: none;
+  background: #444444;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -391,7 +391,7 @@ body * {
   cursor: pointer;
   border: 2px solid #ccc;
   border-radius: 5px;
-  background-color: white;
+  background-color: #444444;
   text-align: left;
 }
 

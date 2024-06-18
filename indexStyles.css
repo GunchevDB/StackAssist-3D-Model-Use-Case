@@ -65,3 +65,44 @@ body {
 .user_account span {
     margin-left: 10px; /* Space between the image and text */
 }
+
+
+#Left_box,
+#Right_box,
+#Top_box,
+#BtmRight_box,
+#BtmLeft_box {
+    position: absolute;
+    width: 20vw; 
+    height: 39vh; 
+}
+
+
+#Left_box {
+    left: 0px; 
+    top: 7vh; 
+}
+
+#Right_box {
+    right: -6vw; 
+    transform: rotate(-45deg);
+    top: 20vh;
+}
+
+#Top_box {
+    top: -15vh;
+    transform: rotate(-45deg);
+    left: 35vw;
+}
+
+#BtmRight_box {
+    right: 10vw; 
+    transform: rotate(-45deg);
+    bottom: -7.5vw;
+}
+
+#BtmLeft_box {
+    left: 13vw; 
+    transform: rotate(-45deg);
+    bottom: -5.5vw;
+}

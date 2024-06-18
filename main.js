@@ -29,7 +29,8 @@ class Application {
   // Setting up application components by getting selectedOrder from local storage
   setupComponents() {
     const selectedOrder = localStorage.getItem('selectedOrder');
-    const modelSrc = selectedOrder === '47719' ? '/model2.glb' : '/model.glb'; // As only 2 models done as of now, if not 47719, showcase model.glb
+    const modelSrc = selectedOrder === '47719' ? '/model2.glb' : selectedOrder === '47700' ? '/model3.glb' : '/model.glb'; // As only 2 models done as of now, if not 47719, showcase model.glb
+    //if order 47719 is selected, use model 3, if its 47700 use model 2, else use the model.glb
 
     // Initialise WebGL and Controller components
     this.components = {
@@ -82,7 +83,7 @@ application.load([
   {
     id: "model",
     type: RESOURCE_TYPE.Model,
-    src: localStorage.getItem('selectedOrder') === '47719' ? "/model2.glb" : "/model.glb", // Selecting model based on order selection
+    src: localStorage.getItem('selectedOrder') === '47719' ? "/model2.glb" : localStorage.getItem('selectedOrder') === '47700' ? "/model3.glb" : "/model.glb", // Selecting model based on order selection
   },
 ]);
 // Registering service worker for PWA functionality

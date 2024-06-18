@@ -39,7 +39,7 @@ class WebGL {
 
     // Loading model groups lines 57 and 68 based on model .glb file
     this.currentGroupIndex = 0;
-    this.groups = this.modelSrc === '/model2.glb' ? this.getModel2Groups() : this.getModel1Groups();
+    this.groups = this.modelSrc === '/model2.glb' ? this.getModel2Groups() : this.modelSrc === '/model3.glb' ? this.getModel3Groups() : this.getModel1Groups();
 
     this.initialPositions = this.elements.children[0].children.map(child => child.position.clone());
     this.initialColors = this.elements.children[0].children.map(child => child.material.color.clone());
@@ -75,6 +75,17 @@ class WebGL {
       { elements: [0, 1, 2, 3, 4, 5, 6, 7, 8], name: "AB-12-13", icon: "fa-location-dot", size: "x2" },
     ];
   }
+//creating array of models 3
+  getModel3Groups() {
+    return [
+      { elements: [0], name: "Euro palette", icon: "fa-pallet", size: "80 x 120 x 14" },
+      { elements: [0, 1], name: "BC-4-3", icon: "fa-location-dot", size: "x1" },
+      { elements: [0, 1, 2, 3, 4], name: "AB-23-45", icon: "fa-location-dot", size: "x3" },
+      { elements: [0, 1, 2, 3, 4, 5], name: "CB-8-6", icon: "fa-location-dot", size: "x1" },
+      { elements: [0, 1, 2, 3, 4, 5, 6, 7], name: "D-10-13", icon: "fa-location-dot", size: "x2" },
+    ];
+  }
+
   // Scaling for screen based on vertical or landscape view(Could also be tablet, phone, desktop)
   setSize(width, height) {
     this.renderer.setSize(width, height);

@@ -87,10 +87,10 @@ The project's main components are organized as follows:
 
 # Key Features
 
-- **Three.js Integration**: Leverage the power of Three.js for 3D rendering and animations.
-- **Progressive Web App**: Installable on mobile devices and desktops for a native app-like experience.
-- **Responsive Design**: Ensures the application looks great on all devices.
-- **Interactive Controls**: Use the OrbitControls for intuitive navigation within the 3D space.
+- **Three.js Integration**: Use of Three.js for 3D rendering and animations.
+- **Progressive Web App**: Installable as an application on mobile devices, used from us for an easier testing experience.
+- **Responsive Design**: Since potential clients work with different dimensions of their devices, we ensure it scales correctly on any device(mobile, tablet or desktop).
+- **Interactive Controls**: Using OrbitControls, which is a ThreeJS add-on for an interactive and smooth orbit around the 3D Model.
 
 # Contacts
 

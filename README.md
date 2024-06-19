@@ -1,6 +1,6 @@
 # StackAssist ThreeJS
 
-StackAssist is a web application that leverages Three.js for 3D rendering and animations, providing an interactive platform for visualizing and manipulating stacked boxes.
+Our version of StackAssist makes use of ThreeJS and OrbitControls in order to have a 3D representation of the pallet model, using a hardcoded Blender model to inspect stacking instructions which are split in a step by step for easier understanding. Additionally the user can choose from a different amount of orders and follow the location of the box needed to be stacked on the pallet.
 
 ## Getting started
 

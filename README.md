@@ -67,6 +67,24 @@ The project's main components are organized as follows:
 - `index.html`: The main HTML file.
 - `main.js`: The entry point of the application.
 
+## Component Explanation
+
+- `ScreenFunctions.js`: Includes most screen functions that have something to do in the Pallet Screen - Progress Bar update based on steps, Wiggle animation when page loaded to showcase 360 degree rotation and updating card content based on step(Shows box location, name, amount)
+- `Loader.js`: Loads 3D Model, Environment and the manifest for the PWA application only returning models when everything is loaded.
+- `Controller.js`: Mouse events such as click, drag and mouse movement for Desktop and Mobile in order to make sure 3D ThreeJS model is functional and can be rotated.
+- `Marquee.js`: Not fully used right now, but is a Parallax setup class that can handle scrolling text in case we add text in ThreeJS Model
+- `WebGL.js`: Used for adding the 3D model to the screen with all the camera control functions, different models based on Order ID, splitting the Pallet 3D Model in a Step By Step with highlights and Next and Previous buttons. Also Screen scaling that will fix 3D Model based on the view of the device(Vertical or Landscape).
+- `main.js`: Setting up PWA functionalities, getting Selected order from localStorage in order to load correct model and pass into `WebGL.js` for the 3D Model. Event listeners such as Previous and Next buttons, Resizing window or changing the view of the device(Vertical or Landscape) and loading model based on selectedOrder which will be stored to localStorage
+- `orders.js`: Select event listener for order card and event listener for Start button when a card has been selected, will get selectedOrder variable ID from localStorage. 
+
+## Additional important files
+
+- `vite.config.js`: As Web app uses vite for a developmental environment, vite config is adding the settings for the PWA functionalities and can be used to import vite related plugins.
+- `service.worker.js`: Essential for PWA application, will install it, save all files to localStorage so app can be tested without an internet connection and will fetch newly added data to be saved in localStorage in case it's updated from the "Admin" side.
+- `manifest.json`: Although vite config acts as a manifest, if having to build the app and then serve, manifest.json is needed. Added because of manifest not working on Netlify when building and serving.
+- `/public/model(2 or 3).glb` - 3D Models exported from blender as a .glb file which are what makes the pallet design change. 
+- `/public/environment.hdr` - Environment for the pallet which is a white screen to make sure the pallet is fully lighted up and doesn't create any shadows based on ThreeJS camera point of view.
+
 # Key Features
 
 - **Three.js Integration**: Leverage the power of Three.js for 3D rendering and animations.
